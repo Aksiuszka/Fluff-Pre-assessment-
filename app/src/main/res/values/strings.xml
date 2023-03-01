@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PreAssessment</string>
+    <string name="account">Nie masz konta? <font color='#000000'>Zarejestruj się</font></string>
 </resources>
