@@ -70,16 +70,22 @@ FirebaseAuth auth = FirebaseAuth.getInstance();
                 openSignup();
             }
         });
-
-
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent i = new Intent(Login.this, Forgot_Password.class);
-                startActivity(i);
-
+                openForgotPassword();
             }
         });
+
+
+//        forgotPassword.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i =new Intent(this, Signup.class);
+//                startActivity(i);
+//
+//            }
+//        });
 
 
     }
@@ -116,6 +122,10 @@ FirebaseAuth auth = FirebaseAuth.getInstance();
     }
     public void openSignup(){
         Intent i =new Intent(this, Signup.class);
+        startActivity(i);
+    }
+    public void openForgotPassword(){
+        Intent i =new Intent(this, Forgot_Password.class);
         startActivity(i);
     }
 }
